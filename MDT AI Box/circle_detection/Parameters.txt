@@ -1,0 +1,6 @@
+Poolball:
+	param1 = 23
+	param2 = 30
+	minRadius = 17
+	maxRadius = 66
+

@@ -1,0 +1,14 @@
+-> Using color segmentation is highly affected by lighting, have to control environment
+-> Depending on shade of colour to detect, colour boundaries have to be customised to different situations
+
+RGB Boundary Values (heavily tested already):
+boundaries = [
+    ([0, 0, 110], [65, 55, 255]), # Red
+    ([86, 31, 0], [255, 180, 50]), # Blue
+    ([0, 60, 0], [160, 255, 60]), # Green 1
+    ([65, 160, 100], [170, 255, 226]), # Green 2
+    ([0, 145, 195], [125, 255, 255]) # Yellow
+]
+
+-> Green is problematic colour as it is most similar to yellow, needs multiple boundaries
+-> No direct light sources for reflection since this is regarded as white and causes multiple segmentation within same object
